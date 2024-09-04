@@ -46,7 +46,6 @@ document.getElementById('registrationForm').addEventListener('submit', function(
 });
 
 window.addEventListener('load', function() {
-    localStorage.clear();
     const tbody = document.getElementById('userTable').querySelector('tbody');
     for (let i = 0; i < localStorage.length; i++) {
         const user = JSON.parse(localStorage.getItem(localStorage.key(i)));
